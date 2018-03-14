@@ -4,6 +4,7 @@ import HelloWorldApp from './Main/HelloWorld';
 import MyActivityIndicator from './Main/MyActivityIndicator';
 import GaodeMapTest from './Main/GaodeMapTest';
 import GaodeMapTest1 from './Main/GaodeExample/index';
+import ImagePickerTest from './Main/ImagePickerTest';
 
 
-AppRegistry.registerComponent('reactNativeCompent', () => GaodeMapTest1);
+AppRegistry.registerComponent('reactNativeCompent', () => ImagePickerTest);
