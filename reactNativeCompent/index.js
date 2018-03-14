@@ -6,6 +6,7 @@ import GaodeMapTest from './Main/GaodeMapTest';
 import GaodeMapTest1 from './Main/GaodeExample/index';
 import ImagePickerTest from './Main/ImagePickerTest';
 import ToastTest from './Main/ToastTest';
+import SplashScreenTest from './Main/SplashScreenTest';
 
 
-AppRegistry.registerComponent('reactNativeCompent', () => ToastTest);
+AppRegistry.registerComponent('reactNativeCompent', () => SplashScreenTest);

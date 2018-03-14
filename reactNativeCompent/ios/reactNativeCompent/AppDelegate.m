@@ -13,6 +13,7 @@
 #import <React/RCTRootView.h>
 
 #import <AMapFoundationKit/AMapFoundationKit.h>
+#import "SplashScreen.h"
 
 @implementation AppDelegate
 
@@ -35,6 +36,7 @@
   [self.window makeKeyAndVisible];
   
   [AMapServices sharedServices].apiKey = @"b49bb29e11a0748637486246c2606937";
+  [SplashScreen show];
   
   return YES;
 }
