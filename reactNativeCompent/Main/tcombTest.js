@@ -9,6 +9,17 @@ var Form = t.form.Form;
 var form = null;
 
 var options = {}; // optional rendering options (see documentation)
+var options = {
+  fields: {
+    name: {
+      // you can use strings or JSX
+      help: 'Your help message here',
+      placeholder: 'Your placeholder here',
+      label: 'Insert your name',
+      error: 'Insert a valid email'
+    }
+  }
+};
 
 export default class AwesomeProject extends Component {
 
