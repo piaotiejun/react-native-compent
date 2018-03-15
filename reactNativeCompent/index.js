@@ -9,6 +9,9 @@ import ToastTest from './Main/ToastTest';
 import SplashScreenTest from './Main/SplashScreenTest';
 import tcombTest from './Main/tcombTest';
 import FormTest from './Main/FormTest/app';
+import TextInputLayoutDemo from './Main/TextInputTest/TextinputlayoutTest';
+import TextInputEffectsExample from './Main/TextInputTest/TextInputEffectsExample';
 
 
-AppRegistry.registerComponent('reactNativeCompent', () => FormTest);
+
+AppRegistry.registerComponent('reactNativeCompent', () => TextInputEffectsExample);
