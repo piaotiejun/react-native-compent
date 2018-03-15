@@ -8,7 +8,7 @@ import ImagePickerTest from './Main/ImagePickerTest';
 import ToastTest from './Main/ToastTest';
 import SplashScreenTest from './Main/SplashScreenTest';
 import tcombTest from './Main/tcombTest';
+import FormTest from './Main/FormTest/app';
 
 
-
-AppRegistry.registerComponent('reactNativeCompent', () => tcombTest);
+AppRegistry.registerComponent('reactNativeCompent', () => FormTest);
