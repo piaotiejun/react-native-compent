@@ -35,7 +35,7 @@
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   
-  [AMapServices sharedServices].apiKey = @"b49bb29e11a0748637486246c2606937";
+  [AMapServices sharedServices].apiKey = @"9b0f44b9325584c14b3351f2f689478a";
   [SplashScreen show];
   
   return YES;

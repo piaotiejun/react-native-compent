@@ -12,6 +12,13 @@ import FormTest from './Main/FormTest/app';
 import TextInputLayoutDemo from './Main/TextInputTest/TextinputlayoutTest';
 import TextInputEffectsExample from './Main/TextInputTest/TextInputEffectsExample';
 
+import SplashScreen from 'react-native-splash-screen';
 
 
-AppRegistry.registerComponent('reactNativeCompent', () => TextInputEffectsExample);
+AppRegistry.registerComponent(
+	'reactNativeCompent', 
+	() => {
+		SplashScreen.hide();
+		return GaodeMapTest1;
+	}
+);

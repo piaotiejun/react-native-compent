@@ -4,7 +4,7 @@ import {
 	Text,
 	StyleSheet } from 'react-native';
 
-import { MapView } from 'react-native-amap3d'
+import { MapView } from 'react-native-amap3d';
 
 export default class GaodeMapTest extends Component {
   render() {
