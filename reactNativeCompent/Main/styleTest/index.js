@@ -1,7 +1,7 @@
 import { StackNavigator } from 'react-navigation';
 import React, { Component } from 'react';
-import { 
-	AppRegistry, 
+import {
+	AppRegistry,
 	View,
 	Platform,
 	ScrollView,
