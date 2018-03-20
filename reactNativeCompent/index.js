@@ -24,6 +24,7 @@ import FormTest from './Main/FormTest/app';
 import TextInputLayoutDemo from './Main/TextInputTest/TextinputlayoutTest';
 import TextInputEffectsExample from './Main/TextInputTest/TextInputEffectsExample';
 import styleTest from './Main/styleTest/index';
+import VideoPlayer from './Main/VideoTest/index.ios';
 
 
 const styles = StyleSheet.create({
@@ -121,6 +122,10 @@ class Examples extends Component {
           {this._renderItem('styleTest', 'styleTest')}
           <View style={styles.separator} />
         </View>
+        <View style={styles.group}>
+          {this._renderItem('VideoPlayer', 'VideoPlayer')}
+          <View style={styles.separator} />
+        </View>
       </ScrollView>
     )
   }
@@ -139,6 +144,7 @@ const app = StackNavigator({
   TextInputLayoutDemo: { screen: TextInputLayoutDemo },
   TextInputEffectsExample: { screen: TextInputEffectsExample },
   styleTest: { screen: styleTest },
+  VideoPlayer: { screen: VideoPlayer },
 }, {
   navigationOptions: {
     headerTintColor: '#212121',
