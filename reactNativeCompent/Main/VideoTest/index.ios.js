@@ -22,6 +22,8 @@ export default class VideoPlayer extends Component {
     this.onProgress = this.onProgress.bind(this);
     this.onBuffer = this.onBuffer.bind(this);
   }
+
+  
   state = {
     rate: 1,
     volume: 1,
@@ -34,7 +36,24 @@ export default class VideoPlayer extends Component {
     skin: 'custom',
     ignoreSilentSwitch: null,
     isBuffering: false,
+    videoSource: this.generateSource(),
   };
+
+  generateSource() {
+    let videoSource = this.props.navigation.state.params.videoSource ? 
+                        this.props.navigation.state.params.videoSource : 
+                        this.props.videoSource;
+    let videoSourceSplit = videoSource.split('.');
+    videoSource = {};
+    let uri = "";
+    let type = videoSourceSplit[videoSourceSplit.length-1];
+
+    for (let i = 0; i < videoSource.length-1; i++) {
+      uri += videoSource[i];
+    }
+    console.log({uri: uri , type: type});
+    return {uri: uri , type: type};
+  }
 
   onLoad(data) {
     console.log('On load fired!');
@@ -123,12 +142,11 @@ export default class VideoPlayer extends Component {
   renderCustomSkin() {
     const flexCompleted = this.getCurrentTimePercentage() * 100;
     const flexRemaining = (1 - this.getCurrentTimePercentage()) * 100;
-
     return (
       <View style={styles.container}>
         <TouchableOpacity style={styles.fullScreen} onPress={() => {this.setState({paused: !this.state.paused})}}>
           <Video
-            source={require('./broadchurch.mp4')}
+            source={this.state.videoSource}
             style={styles.fullScreen}
             rate={this.state.rate}
             paused={this.state.paused}
@@ -198,7 +216,7 @@ export default class VideoPlayer extends Component {
       <View style={styles.container}>
         <View style={styles.fullScreen}>
           <Video
-            source={require('./broadchurch.mp4')}
+            source={this.state.videoSource}
             style={videoStyle}
             rate={this.state.rate}
             paused={this.state.paused}
@@ -257,6 +275,8 @@ export default class VideoPlayer extends Component {
   }
 
   render() {
+    console.log(this.state.videoSource);
+    console.log(this.state.controls);
     return this.state.controls ? this.renderNativeSkin() : this.renderCustomSkin();
   }
 }

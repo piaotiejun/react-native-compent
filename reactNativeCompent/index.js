@@ -2,14 +2,14 @@ import SplashScreen from 'react-native-splash-screen';
 import { StackNavigator } from 'react-navigation';
 import React, { Component } from 'react';
 import { 
-	AppRegistry, 
-	View,
-	Platform,
-	ScrollView,
-	StyleSheet,
-	Text,
-	TouchableHighlight,
-	TouchableNativeFeedback,
+  AppRegistry, 
+  View,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableHighlight,
+  TouchableNativeFeedback,
 } from 'react-native';
 
 import HelloWorldApp from './Main/HelloWorld';
@@ -67,7 +67,7 @@ class Examples extends Component {
 
   _renderItem(title, route) {
     return (
-      <Touchable onPress={() => this.props.navigation.navigate(route)}>
+      <Touchable onPress={() => this.props.navigation.navigate(route, {videoSource: './broadchurch.mp4'})}>
         <View style={styles.item}>
           <Text style={styles.itemText}>{title}</Text>
         </View>
@@ -162,9 +162,9 @@ const app = StackNavigator({
 })
 
 AppRegistry.registerComponent(
-	'reactNativeCompent', 
-	() => {
-		SplashScreen.hide();
-		return app;
-	}
+  'reactNativeCompent', 
+  () => {
+    SplashScreen.hide();
+    return app;
+  }
 );
