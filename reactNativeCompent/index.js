@@ -67,7 +67,7 @@ class Examples extends Component {
 
   _renderItem(title, route) {
     return (
-      <Touchable onPress={() => this.props.navigation.navigate(route, {videoSource: './broadchurch.mp4'})}>
+      <Touchable onPress={() => this.props.navigation.navigate(route)}>
         <View style={styles.item}>
           <Text style={styles.itemText}>{title}</Text>
         </View>

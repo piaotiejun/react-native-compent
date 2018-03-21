@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 
 import ImagePicker from 'react-native-image-picker';
+import VideoPlayer from './VideoTest/index.ios';
 
 export default class ImagePickerTest extends React.Component {
 
@@ -20,6 +21,11 @@ export default class ImagePickerTest extends React.Component {
 
   selectPhotoTapped() {
     const options = {
+      title: '请选择图片来源',
+      cancelButtonTitle:'取消',
+      takePhotoButtonTitle:'拍照',
+      chooseFromLibraryButtonTitle:'相册图片',
+      cameraType: 'back',
       quality: 1.0,
       maxWidth: 500,
       maxHeight: 500,
@@ -74,11 +80,14 @@ export default class ImagePickerTest extends React.Component {
         console.log('User tapped custom button: ', response.customButton);
       }
       else {
+        let source = { uri: response.uri };
         this.setState({
-          videoSource: response.uri
+          videoSource: source
         });
+        // this.props.navigation.navigate('VideoPlayer');
       }
     });
+
   }
 
   render() {
@@ -98,8 +107,11 @@ export default class ImagePickerTest extends React.Component {
           </View>
         </TouchableOpacity>
 
+        { this.state.avatarSource &&
+          <Text style={{margin: 8, textAlign: 'center'}}>{this.state.avatarSource.uri}</Text>
+        }
         { this.state.videoSource &&
-          <Text style={{margin: 8, textAlign: 'center'}}>{this.state.videoSource}</Text>
+          <Text style={{margin: 8, textAlign: 'center'}}>{this.state.videoSource.uri}</Text>
         }
       </View>
     );

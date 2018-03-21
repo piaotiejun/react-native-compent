@@ -40,9 +40,12 @@ export default class VideoPlayer extends Component {
   };
 
   generateSource() {
-    let videoSource = this.props.navigation.state.params.videoSource ? 
-                        this.props.navigation.state.params.videoSource : 
-                        this.props.videoSource;
+    // default video
+    if (this.props.videoSource == null) {
+      return require('./broadchurch.mp4');
+    }
+
+    let videoSource = this.props.videoSource;
     let videoSourceSplit = videoSource.split('.');
     videoSource = {};
     let uri = "";
@@ -51,6 +54,7 @@ export default class VideoPlayer extends Component {
     for (let i = 0; i < videoSource.length-1; i++) {
       uri += videoSource[i];
     }
+    
     console.log({uri: uri , type: type});
     return {uri: uri , type: type};
   }

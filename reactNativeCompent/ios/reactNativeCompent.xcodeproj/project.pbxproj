@@ -51,7 +51,6 @@
 		B97CDD56205A5FC700866AE9 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B97CDD24205A5FC700866AE9 /* Octicons.ttf */; };
 		B97CDD57205A5FC700866AE9 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B97CDD25205A5FC700866AE9 /* SimpleLineIcons.ttf */; };
 		B97CDD58205A5FC700866AE9 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B97CDD26205A5FC700866AE9 /* Zocial.ttf */; };
-		B989FC482061056900060AE4 /* broadchurch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B989FC1E2061056900060AE4 /* broadchurch.mp4 */; };
 		FAC3883394BD68B662D78B6D /* libPods-reactNativeCompent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 897F034387D39C918B7C53D1 /* libPods-reactNativeCompent.a */; };
 /* End PBXBuildFile section */
 
@@ -402,7 +401,6 @@
 		B97CDD24205A5FC700866AE9 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
 		B97CDD25205A5FC700866AE9 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		B97CDD26205A5FC700866AE9 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
-		B989FC1E2061056900060AE4 /* broadchurch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = broadchurch.mp4; path = "../../../react-native-video/example/broadchurch.mp4"; sourceTree = "<group>"; };
 		EDD99B49586A6945044228DD /* Pods-reactNativeCompent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeCompent.release.xcconfig"; path = "Pods/Target Support Files/Pods-reactNativeCompent/Pods-reactNativeCompent.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -550,7 +548,6 @@
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
-				B989FC1E2061056900060AE4 /* broadchurch.mp4 */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
@@ -1229,7 +1226,6 @@
 				B97CDD50205A5FC700866AE9 /* Feather.ttf in Resources */,
 				B97CDD4E205A5FC700866AE9 /* Entypo.ttf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				B989FC482061056900060AE4 /* broadchurch.mp4 in Resources */,
 				B97CDD54205A5FC700866AE9 /* MaterialCommunityIcons.ttf in Resources */,
 				B97CDD51205A5FC700866AE9 /* FontAwesome.ttf in Resources */,
 			);
