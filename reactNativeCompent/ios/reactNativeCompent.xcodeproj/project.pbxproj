@@ -51,6 +51,8 @@
 		B97CDD56205A5FC700866AE9 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B97CDD24205A5FC700866AE9 /* Octicons.ttf */; };
 		B97CDD57205A5FC700866AE9 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B97CDD25205A5FC700866AE9 /* SimpleLineIcons.ttf */; };
 		B97CDD58205A5FC700866AE9 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B97CDD26205A5FC700866AE9 /* Zocial.ttf */; };
+		B989FD0120624CA800060AE4 /* libRNSyanImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B989FD0020624C8700060AE4 /* libRNSyanImagePicker.a */; };
+		B98E52B620624D6800894FF4 /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B98E528B20624D6800894FF4 /* TZImagePickerController.bundle */; };
 		FAC3883394BD68B662D78B6D /* libPods-reactNativeCompent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 897F034387D39C918B7C53D1 /* libPods-reactNativeCompent.a */; };
 /* End PBXBuildFile section */
 
@@ -356,6 +358,13 @@
 			remoteGlobalIDString = 3D7682761D8E76B80014119E;
 			remoteInfo = SplashScreen;
 		};
+		B989FCFF20624C8700060AE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B989FCFB20624C8600060AE4 /* RNSyanImagePicker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNSyanImagePicker;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -401,6 +410,9 @@
 		B97CDD24205A5FC700866AE9 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
 		B97CDD25205A5FC700866AE9 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		B97CDD26205A5FC700866AE9 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		B989FCFB20624C8600060AE4 /* RNSyanImagePicker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSyanImagePicker.xcodeproj; path = "../node_modules/react-native-syan-image-picker/ios/RNSyanImagePicker.xcodeproj"; sourceTree = "<group>"; };
+		B98E528B20624D6800894FF4 /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TZImagePickerController.bundle; path = "../node_modules/react-native-syan-image-picker/ios/TZImagePickerController/TZImagePickerController.bundle"; sourceTree = "<group>"; };
+		B98E52B720624DC400894FF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		EDD99B49586A6945044228DD /* Pods-reactNativeCompent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeCompent.release.xcconfig"; path = "Pods/Target Support Files/Pods-reactNativeCompent/Pods-reactNativeCompent.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -417,6 +429,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B989FD0120624CA800060AE4 /* libRNSyanImagePicker.a in Frameworks */,
 				B9003C182060E8CD00618723 /* libRCTVideo.a in Frameworks */,
 				B97CDD052059056100866AE9 /* libSplashScreen.a in Frameworks */,
 				B97CDCFE2058FC6A00866AE9 /* libRNImagePicker.a in Frameworks */,
@@ -617,6 +630,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				B989FCFB20624C8600060AE4 /* RNSyanImagePicker.xcodeproj */,
 				B9003BE82060E8B000618723 /* RCTVideo.xcodeproj */,
 				B97CDCFF2059055100866AE9 /* SplashScreen.xcodeproj */,
 				B97CDCC32058FC1900866AE9 /* RNImagePicker.xcodeproj */,
@@ -648,6 +662,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				B98E528B20624D6800894FF4 /* TZImagePickerController.bundle */,
 				B97CDD1B205A5FC700866AE9 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* reactNativeCompent */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -723,6 +738,14 @@
 			);
 			name = Fonts;
 			path = "../node_modules/react-native-vector-icons/Fonts";
+			sourceTree = "<group>";
+		};
+		B989FCFC20624C8600060AE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B989FD0020624C8700060AE4 /* libRNSyanImagePicker.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -897,6 +920,10 @@
 				{
 					ProductGroup = B97CDCC42058FC1900866AE9 /* Products */;
 					ProjectRef = B97CDCC32058FC1900866AE9 /* RNImagePicker.xcodeproj */;
+				},
+				{
+					ProductGroup = B989FCFC20624C8600060AE4 /* Products */;
+					ProjectRef = B989FCFB20624C8600060AE4 /* RNSyanImagePicker.xcodeproj */;
 				},
 				{
 					ProductGroup = B97CDD002059055100866AE9 /* Products */;
@@ -1201,6 +1228,13 @@
 			remoteRef = B97CDD032059055100866AE9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		B989FD0020624C8700060AE4 /* libRNSyanImagePicker.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSyanImagePicker.a;
+			remoteRef = B989FCFF20624C8700060AE4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1215,6 +1249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B98E52B620624D6800894FF4 /* TZImagePickerController.bundle in Resources */,
 				B97CDD56205A5FC700866AE9 /* Octicons.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				B97CDD52205A5FC700866AE9 /* Foundation.ttf in Resources */,
@@ -1379,6 +1414,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				13B07FB21A68108700A75B9A /* Base */,
+				B98E52B720624DC400894FF4 /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			path = reactNativeCompent;
@@ -1563,6 +1599,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1605,6 +1642,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;

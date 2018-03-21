@@ -17,6 +17,7 @@ import MyActivityIndicator from './Main/MyActivityIndicator';
 import GaodeMapTest from './Main/GaodeMapTest';
 import GaodeMapTest1 from './Main/GaodeExample/index';
 import ImagePickerTest from './Main/ImagePickerTest';
+import ImagePickerMutiTest from './Main/ImagePicker/ImagePickerExample';
 import ToastTest from './Main/ToastTest';
 import SplashScreenTest from './Main/SplashScreenTest';
 import tcombTest from './Main/tcombTest';
@@ -99,6 +100,10 @@ class Examples extends Component {
           <View style={styles.separator} />
         </View>
         <View style={styles.group}>
+          {this._renderItem('ImagePickerMutiTest', 'ImagePickerMutiTest')}
+          <View style={styles.separator} />
+        </View>
+        <View style={styles.group}>
           {this._renderItem('ToastTest', 'ToastTest')}
           <View style={styles.separator} />
         </View>
@@ -138,6 +143,7 @@ const app = StackNavigator({
   GaodeMapTest: { screen: GaodeMapTest },
   GaodeMapTest1: { screen: GaodeMapTest1 },
   ImagePickerTest: { screen: ImagePickerTest },
+  ImagePickerMutiTest: { screen: ImagePickerMutiTest },
   ToastTest: { screen: ToastTest },
   tcombTest: { screen: tcombTest },
   FormTest: { screen: FormTest },
