@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 
 import ImagePicker from 'react-native-image-picker';
-import VideoPlayer from './VideoTest/index.ios';
+
 
 export default class ImagePickerTest extends React.Component {
 
@@ -87,7 +87,6 @@ export default class ImagePickerTest extends React.Component {
         // this.props.navigation.navigate('VideoPlayer');
       }
     });
-
   }
 
   render() {

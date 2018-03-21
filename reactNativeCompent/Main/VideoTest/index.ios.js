@@ -54,7 +54,7 @@ export default class VideoPlayer extends Component {
     for (let i = 0; i < videoSource.length-1; i++) {
       uri += videoSource[i];
     }
-    
+
     console.log({uri: uri , type: type});
     return {uri: uri , type: type};
   }
