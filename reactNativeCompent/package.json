@@ -13,6 +13,7 @@
     "react-native-easy-toast": "^1.1.0",
     "react-native-gifted-form": "^0.1.1",
     "react-native-image-picker": "^0.26.7",
+    "react-native-popup-dialog": "^0.11.46",
     "react-native-splash-screen": "^3.0.6",
     "react-native-syan-image-picker": "^0.1.2",
     "react-native-textinput-effects": "^0.4.2",
