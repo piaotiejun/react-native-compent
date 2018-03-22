@@ -27,6 +27,7 @@ import TextInputEffectsExample from './Main/TextInputTest/TextInputEffectsExampl
 import styleTest from './Main/styleTest/index';
 import VideoPlayer from './Main/VideoTest/index.ios';
 import PopupDialogExample from './Main/PopupDialog/PopupDialogExample';
+import JpushTest from './Main/Jpush/index';
 
 
 const styles = StyleSheet.create({
@@ -136,6 +137,10 @@ class Examples extends Component {
           {this._renderItem('PopupDialogExample', 'PopupDialogExample')}
           <View style={styles.separator} />
         </View>
+        <View style={styles.group}>
+          {this._renderItem('JpushTest', 'JpushTest')}
+          <View style={styles.separator} />
+        </View>
       </ScrollView>
     )
   }
@@ -157,6 +162,7 @@ const app = StackNavigator({
   styleTest: { screen: styleTest },
   VideoPlayer: { screen: VideoPlayer },
   PopupDialogExample: { screen: PopupDialogExample },
+  JpushTest: {screen: JpushTest},
 }, {
   navigationOptions: {
     headerTintColor: '#212121',
