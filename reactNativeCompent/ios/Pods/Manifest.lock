@@ -5,6 +5,10 @@ PODS:
   - AMapNavi (5.5.0):
     - AMap3DMap (>= 5.6.0)
     - AMapFoundation (~> 1.4)
+  - JCoreRN (1.2.5):
+    - React
+  - JPushRN (2.1.12):
+    - React
   - React (0.54.2):
     - React/Core (= 0.54.2)
   - react-native-amap3d (0.12.1):
@@ -46,6 +50,8 @@ PODS:
   - yoga (0.54.2.React)
 
 DEPENDENCIES:
+  - JCoreRN (from `../node_modules/jcore-react-native`)
+  - JPushRN (from `../node_modules/jpush-react-native`)
   - react-native-amap3d (from `../node_modules/react-native-amap3d/lib/ios/`)
   - React/ART (from `../node_modules/react-native/`)
   - React/Core (from `../node_modules/react-native/`)
@@ -63,6 +69,10 @@ DEPENDENCIES:
   - yoga (from `../node_modules/react-native/ReactCommon/yoga/`)
 
 EXTERNAL SOURCES:
+  JCoreRN:
+    :path: ../node_modules/jcore-react-native
+  JPushRN:
+    :path: ../node_modules/jpush-react-native
   React:
     :path: ../node_modules/react-native/
   react-native-amap3d:
@@ -74,10 +84,12 @@ SPEC CHECKSUMS:
   AMap3DMap: 97afc57b88628237d916991ac31795eb7bde3f63
   AMapFoundation: 973682cfe60b92efd73a8ef8f1144fa0fa8e1296
   AMapNavi: d2759fcd67b82b0a8e07fe7317ef0bfe339de47d
+  JCoreRN: 3fbab9897c98106ee46c3d000fba4b6fd67a1c4e
+  JPushRN: 99e05246e291c3cf925af32a33806bf7047eee0d
   React: 87cb66e255b02cae031f82a5d3e7c70c639957fc
   react-native-amap3d: fbfe9ac9fb652ed3e9db2cce03db2c9ecb24f771
   yoga: de5853128c499decde39904270f22f75d36d7668
 
-PODFILE CHECKSUM: 2d734cb6614538458b3ea84e7ff5ccb087be428b
+PODFILE CHECKSUM: 186070c86a65e676e789c38ed0d059db4768c3bc
 
 COCOAPODS: 1.2.1

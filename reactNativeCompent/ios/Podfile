@@ -18,4 +18,6 @@ target 'reactNativeCompent' do
 	'RCTLinkingIOS',
   ]
   pod 'react-native-amap3d', path: '../node_modules/react-native-amap3d/lib/ios/'
+  pod 'JPushRN', :path => '../node_modules/jpush-react-native'
+  pod 'JCoreRN', :path => '../node_modules/jcore-react-native'
 end
