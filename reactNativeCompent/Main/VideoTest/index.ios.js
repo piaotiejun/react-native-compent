@@ -43,6 +43,7 @@ export default class VideoPlayer extends Component {
     // default video
     if (this.props.videoSource == null) {
       return require('./broadchurch.mp4');
+      // return {uri: "http://150.138.98.114/67729F1C40D387162C16A311C/03000801005AACDDAAC5EBD17F83C2773238E5-62B2-D2DC-6F52-A9E72EFC47C0.mp4?ccode=0502&duration=40&expire=18000&psid=ae89a9884e2dbdbd8713eabcfc1432ec&ups_client_netip=3a3b4052&ups_ts=1521769670&ups_userid=&utid=a3WJD7JADykCARvQdZiI29hD&vid=XMzQ2NjM3NjMwOA%3D%3D&vkey=A17a3a245ee6803bf996c1f87e1136708&s=58f4a494017e11df97c0&ali_redirect_domain=vali-dns.cp31.ott.cibntv.net"};
     }
 
     let videoSource = this.props.videoSource;
